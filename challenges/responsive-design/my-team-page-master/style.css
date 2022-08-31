@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 20px;
+}
+.description-container{
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: auto;
+}
+
+h1{
+    font-family:'Pt Serif';
+    font-weight: 700;
+    font-size: 36px;
+    width: fit-content;
+    margin-bottom: 60px;
+    margin-right: 100px;
+}
+
+.info{
+    width: 335px;
+    font-size: 18px;
+    max-width: 439px;
+}
+
+/* CONTAINER CREWS */
+
+.crew-container{
+    max-width: 800px;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+    gap: 50px;
+    margin: auto;
+}
+
+/* FORMAT OF CARD CREW */
+
+.card-crew{
+    position: relative;
+    width: 138px;
+}
+
+.card-crew__image{
+    width: 100%;
+}
+
+.card-crew--vertical{
+    position: absolute;
+    top: 120px;
+    right: -65px;
+    padding: 0;
+    margin: 0;
+    transform: rotate(90deg);
+    font-family:'Pt Serif';
+    font-weight: 400;
+    transition: .5s all ease-in-out;
+}
+
+
+.card-crew:hover > .card-crew--vertical{
+    top: 50px;
+}
+/* CARD CREW GO DOWN*/
+
+.down{
+transform: translateY(100px);
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 560px) {
+    .card-crew{
+        position: relative;
+        width: 228px;
+    }
+
+    
+}
