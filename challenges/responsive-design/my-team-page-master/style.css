@@ -87,5 +87,8 @@ transform: translateY(100px);
         width: 228px;
     }
 
-    
+    .card-crew--vertical{
+        top: 220px;
+    }
+
 }
