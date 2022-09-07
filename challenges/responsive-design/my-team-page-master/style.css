@@ -73,6 +73,7 @@ h1{
 .card-crew--vertical{
     width:150px;
     height: 10px;
+    font-size: 12px;
     position: absolute;
     top: 120px;
     right: -95px;
@@ -88,7 +89,7 @@ h1{
 
 
 .card-crew:hover > .card-crew--vertical{
-    top: 50px;
+    top: 70px;
 }
 
 /*CARDS POSITIONS*/
