@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+
+a{
+    text-decoration: none;
+    color: gray;
+}
 html{
     font-family: 'Poppins', sans-serif;
 }
@@ -12,12 +17,16 @@ html{
 body{
     padding: 20px;
 }
-
+main{
+    width: 100%;
+    height: 100%;
+}
 .description-container{
     max-width: 800px;
     display: flex;
     flex-wrap: wrap; 
     margin: auto;
+    
 }
 
 h1{
@@ -35,6 +44,8 @@ h1{
     max-width: 439px;
 }
 
+
+
 /* CONTAINER CREWS */
 
 .crew-container{
@@ -45,6 +56,7 @@ h1{
     justify-content: ;
     gap: 50px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 /* FORMAT OF CARD CREW */
@@ -59,15 +71,19 @@ h1{
 }
 
 .card-crew--vertical{
+    width:150px;
+    height: 10px;
     position: absolute;
     top: 120px;
-    right: -65px;
+    right: -95px;
     padding: 0;
     margin: 0;
     transform: rotate(90deg);
     font-family:'Pt Serif';
     font-weight: 400;
     transition: .5s all ease-in-out;
+    text-transform: uppercase;
+   
 }
 
 
@@ -78,12 +94,20 @@ h1{
 /*CARDS POSITIONS*/
 
 #photo-2, #photo-4, #photo-6{
-    transform: translateY(150px);
+    transform: translateY(100px);
 }
 /* CARD CREW GO DOWN*/
 
 .down{
 transform: translateY(100px);
+}
+
+
+footer{
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -92,6 +116,7 @@ transform: translateY(100px);
     .card-crew{
         position: relative;
         width: 228px;
+        margin-bottom: 100px;
     }
 
     .card-crew--vertical{
@@ -103,7 +128,7 @@ transform: translateY(100px);
     }
 
     #photo-2, #photo-5{
-        transform: translateY(150px);
+        transform: translateY(100px);
     }
     
 
