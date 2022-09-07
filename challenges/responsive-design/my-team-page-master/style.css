@@ -12,6 +12,7 @@ html{
 body{
     padding: 20px;
 }
+
 .description-container{
     max-width: 800px;
     display: flex;
@@ -73,6 +74,12 @@ h1{
 .card-crew:hover > .card-crew--vertical{
     top: 50px;
 }
+
+/*CARDS POSITIONS*/
+
+#photo-2, #photo-4, #photo-6{
+    transform: translateY(150px);
+}
 /* CARD CREW GO DOWN*/
 
 .down{
@@ -90,5 +97,14 @@ transform: translateY(100px);
     .card-crew--vertical{
         top: 220px;
     }
+
+    #photo-2, #photo-4, #photo-6{
+        transform: translateY(0);
+    }
+
+    #photo-2, #photo-5{
+        transform: translateY(150px);
+    }
+    
 
 }
