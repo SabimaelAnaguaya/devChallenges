@@ -1,0 +1,43 @@
+
+
+:root{
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding: 20px;
+}
+
+.intro-recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+}
+
+.resume-recipe{
+    display: flex;
+    gap: 10px;
+    padding-right: 20px;
+    align-items: flex-start;
+}
+
+.intro-recipe .img-recipe{
+    width: 100%;
+    border-radius: 20px;
+}
+.icon-restaurant{
+    width: 30px;
+    height: 30px;
+    background: url('./assets/restaurant-menu.svg');
+    background-size: cover;
+    background: red;
+}
