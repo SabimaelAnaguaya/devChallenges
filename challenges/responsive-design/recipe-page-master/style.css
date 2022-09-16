@@ -1,6 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@1,400;1,500&display=swap');
 
 :root{
+    --gray: #BDBDBD;
+    --orange: #F2994A;
+
+    --play: 'Playfair Display', serif;
+    
 
 }
 
@@ -9,7 +14,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-family: 'Montserrat', sans-serif;
+}
 .container{
     width: 100%;
     padding: 20px;
@@ -34,10 +41,71 @@
     width: 100%;
     border-radius: 20px;
 }
-.icon-restaurant{
-    width: 30px;
-    height: 30px;
-    background: url('./assets/restaurant-menu.svg');
-    background-size: cover;
-    background: red;
+
+.time-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+
+}
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.card-time{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.card-time--complete{
+    width: 100%;
+}
+.card-time__title{
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*  INGREDIENTS  SECTION */
+
+.ingredients-recipe{
+    max-width: 678px;
+}
+.title-stuff{
+    margin: 10px 0;
+    font-family: var(--play);
+    font-weight: 300;
+}
+.steps{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* INSTRUCTION SECTION */
+
+ol.lista{
+    counter-reset: li;
+    list-style: none;
+}
+ol li{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+ol.lista > li:before{
+    counter-increment: li;
+    content: counter(li);
+    color: gray;
+    font-size: 20px;
+    padding: 3px 10px;
+    margin-right: 10px;
+    color: azure;
+    background: var(--orange);
+    border-radius: 10px;
+    width: max-content;
 }
