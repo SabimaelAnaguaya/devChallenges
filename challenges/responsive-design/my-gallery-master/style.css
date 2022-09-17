@@ -44,9 +44,9 @@ body{
 }
 
 .gallery{
-    width: 90%;
-    padding: 0 30px;
+    width: 80%;
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
