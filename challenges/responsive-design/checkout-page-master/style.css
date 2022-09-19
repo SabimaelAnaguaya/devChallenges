@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    padding: 20px;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    width: 100%;
+}
+
+/* Chekout selection */
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20px;
+}
+.container-checkout{
+    max-width: 490px;
+    height: fit-content;
+    padding: 30px;
+    margin-top: 30px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.card-checkout{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px ;
+}
+
+.img-checkout{
+    width: 130px;
+    border-radius: 15px;
+}
+
+.title-price__checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-checkout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.info-checkout h3{
+    width: 100%;
+}
+
+.new-price{
+    color: #F2994A;
+}
+
+.old-price{
+    font-size: 14px;
+    text-decoration:line-through;
+}
+
+.count-checkout{
+    display: flex;
+    width: 120px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px; 
+    font-weight: 500;    
+    justify-content: space-around;
+    align-items: center;
+}
+
+.add-remove{
+    width: 20px;
+    height: 20px;
+    background: #E0E0E0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.amout-checkout{
+    margin-top: 100px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #BDBDBD;
+    padding: 15px 0;
+    font-weight: 700;
+}
+
+/* Form Section */
+
+.main-forms{
+    max-width: 465px;
+}
+.main-forms h3{
+    margin-top: 50px;
+}
+.input-form{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: 2px solid #828282;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.input-form img{
+    height: 60%;
+}
+
+.lbl{
+    margin-top: 30px;
+}
+
+input{
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+.form__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.confirm-checkbox{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;  
+    gap: 20px;
+}
+.confirm-checkbox input{
+    width: auto;
+}
+.confirm-checkbox label{
+    width: 90%;
+}
+.container-btn{
+    width: 100%;
+    position: relative;
+}
+.btn{
+    position: absolute;
+    width: 160px;
+    height: 64px;
+    background: #F2994A;
+    border: none;
+    border-radius: 20px;
+    color: #F2F2F2;
+    font-weight: 700;
+    cursor: pointer;
+    right: 0;
+}
+
+header div{
+    width: 100%;
+    height: 100px;
+    margin: 30px;
+}
