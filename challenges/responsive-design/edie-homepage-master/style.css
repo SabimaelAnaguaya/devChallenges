@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main-container{
+    padding: 20px;
+}
+
+/* =========================== 
+HEADER SECTION 
+============================== */
+
+.menubar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-logo{
+    font-family: 'Heebo', sans-serif;
+    font-size: 24px;
+}
+
+.menu-hamburger{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: black;
+    transition: .5s all ease-in-out;
+}
+
+.line1{
+    position: absolute;
+    transform: rotate(45deg);
+    transition: .5s all ease-in-out;
+}
+
+.line2{
+    position: absolute;
+    transform: scale(0);
+    transition: .5s all ease-in-out;
+}
+
+.line3{
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: .5s all ease-in-out;
+}
+
+
+.menubar-list{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    transform: translateX(100%);
+    transition: all 0.5s ease-out;
+}
+
+.show{
+    transform: translateX(0);
+    transition: all 0.5s ease-in;
+}
+
+
+/* ==========================
+MAIN SECTION
+===========================*/
+.introduce-homepage{
+    
+}
+.center-text{
+    width: 80%;
+    margin: 20px  auto;
+}
+.center-text-blue{
+    color: #2D9CDB;
+}
+
+.title-homepage{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.introduce-homepage{
+    max-width: 1300;
+}
+.hero-image{
+    width: 100%;
+    border-radius: 20px;
+}
+.mail-contact{
+    padding: 10px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.mail-contact input{
+    outline: none;
+    border: none;
+    background: #F2F2F2;
+    height: 40px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.mail-contact button{
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: #2D9CDB;
+}
