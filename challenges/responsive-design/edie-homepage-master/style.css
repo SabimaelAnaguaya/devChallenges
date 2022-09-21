@@ -16,6 +16,14 @@ a{
     padding: 20px;
 }
 
+.card-2{
+    --primary:#27AE60;
+}
+
+.card-3{
+    --primary:#EB5757;
+}
+
 /* =========================== 
 HEADER SECTION 
 ============================== */
@@ -71,9 +79,9 @@ HEADER SECTION
 
 
 .menubar-list{
+    position: fixed;
     width: 100%;
     height: 100vh;
-    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -147,3 +155,15 @@ MAIN SECTION
     color: white;
     background: #2D9CDB;
 }
+
+/* SERVICES */
+
+.card-services{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
