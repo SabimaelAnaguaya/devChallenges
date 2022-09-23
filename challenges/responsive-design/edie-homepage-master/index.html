@@ -72,63 +72,121 @@
       
       <section class="card-services main-container">
         <h3 class="">We offer high demand services</h3>
-        <card-service
-          
-          img="./assets/pencil.svg"
-          title="ui/ux design"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
-        </card-service>
-
-        <card-service
-          class="card-2"
-          img="./assets/code.svg"
-          title="Front End"
-        >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id error atque nostrum, deleniti praesentium odit ducimus expedita, quos facilis, distinctio beatae veritatis dolorem velit iusto vero? Accusamus veniam sapiente libero?
-        </card-service>
-
-        <card-service
-          class="card-3"
-          img="./assets/backend-icon.svg"
-          title="Back End"
-        >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id error atque nostrum, deleniti praesentium odit ducimus expedita, quos facilis, distinctio beatae veritatis dolorem velit iusto vero? Accusamus veniam sapiente libero?
-        </card-service>
+        <div class="card-service_container">
+          <card-service
+            img="./assets/pencil.svg"
+            title="ui/ux design"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+          </card-service>
+  
+          <card-service
+            class="card-2"
+            img="./assets/code.svg"
+            title="Front End"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id error atque nostrum, deleniti praesentium odit ducimus expedita, quos facilis, distinctio beatae veritatis dolorem velit iusto vero? Accusamus veniam sapiente libero?
+          </card-service>
+  
+          <card-service
+            class="card-3"
+            img="./assets/backend-icon.svg"
+            title="Back End"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id error atque nostrum, deleniti praesentium odit ducimus expedita, quos facilis, distinctio beatae veritatis dolorem velit iusto vero? Accusamus veniam sapiente libero?
+          </card-service>
+        </div>
 
       </section>
+
       <section class="main-container">
-        <card-design
-          img="./assets/smarthome.jpg"
-          title="Smart home dashboard"
-          subtitle="Full stack application"
+        <h3>Good design means good business</h3>
+        <div class="card-design_container">
+          <div class="card-design_down">
+            <card-design
+              img="./assets/smarthome.jpg"
+              title="Smart home dashboard"
+              subtitle="Full stack application"
+    
+            ></card-design>
+    
+            <card-design
+              img="./assets/onboard.png"
+              title="Onboarding application"
+              subtitle="UX/UI design"
+    
+            ></card-design>
+          </div>
+          <div>
+            <card-design
+              img="./assets/booking.png"
+              title="Booking System"
+              subtitle="Mobile application"
+    
+            ></card-design>
+    
+            <card-design
+              img="./assets/juice-product.png"
+              title="Juice product homepage"
+              subtitle="Front End application"
+    
+            ></card-design>
+          </div>
+        </div>
 
-        ></card-design>
 
-        <card-design
-          img="./assets/onboard.png"
-          title="Onboarding application"
-          subtitle="UX/UI design"
+      </section>
 
-        ></card-design>
+      <section class="main-container">
+        <div class="team-container">
+          <div class="info-team">
+            <p>Meet the team</p>
+            <h3>We are chilled and a laidback team</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="photos-team">
+            <img src="./assets/person1.png" alt="" class="a">
+            <img src="./assets/person2.png" alt="" class="b">
+            <img src="./assets/person3.png" alt="" class="c">
+          </div>
+        </divc>
+      </section>
 
-        <card-design
-          img="./assets/booking.png"
-          title="Booking System"
-          subtitle="Mobile application"
-
-        ></card-design>
-
-        <card-design
-          img="./assets/juice-product.png"
-          title="Juice product homepage"
-          subtitle="Front End application"
-
-        ></card-design>
-
-
+      <section class="main-container">
+        <div class="chief-container">
+          <h4 class="info-chief">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h4>
+          <div class="chief-card">
+            <img src="./assets/person4.png" alt="">
+            <div class="chief-card_info">
+              <h4>Carlos Tran</h4>
+              <p>The Decorate Gatsby</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer class="header">
+      <ul class="list-header">
+        <li>Home</li>
+        <li>Services</li>
+        <li>Our works</li>
+        <li>Clients</li>
+        <li>Contact</li>
+      </ul>
+      <div class="social-media">
+        <h4>EDIE</h4>
+        <div class="icon-media">
+          <img src="./assets/instagram.svg" alt="">
+          <img src="./assets/linkedin.svg" alt="">
+          <img src="./assets/twitter.svg" alt="">
+        </div>
+      </div>
+      <div class="mail-contact center-text footer-mail">
+        <input type="mail" placeholder="Email">
+        <button>Join</button>
+      </div>
+    </footer>
 
     <script type="module" src="./components/card-service.js"></script>
     <script type="module" src="./components/card-design.js"></script>
