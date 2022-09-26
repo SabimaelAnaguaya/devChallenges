@@ -2,94 +2,99 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
     <link rel="icon" href="devchallenges.png" />
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link rel="stylesheet" href="./styles/style.css">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <title>Portafolio Devchallenges</title>
 
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <main class="main">
+      <section class="perfil container"> 
+        <picture class="photo-perfil">
+          <img src="./assets/perfilrenovado.png" alt="">
+        </picture>
+        <article class="info-perfil">
+          <div class="intro-perfil">
+            <h1>Sabimael Añaguaya</h1>
+            <h2>Front End Developer</h2>
+          </div>
+          <div class="social-perfil">
+            <a href="">
+              <img src="./assets/mail.svg" alt="">
+              <p class="hide-element">sabimael.anaguaya@gmail.com</p>
+            </a>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
+            <a href="">
+              <img src="./assets/phone.svg" alt="">
+              <p class="hide-element">+591 60636949</p>
+            </a>
+          </div>
+          <div class="description-perfil">
+            <p>Self-motivated developer, who is willing to learn and create outstanding UI applications.</p>
+            <p>Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.</p>
+          </div>
+        </article>
+      </section>
 
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+      <section class="skills container">
+        <h3>Front End</h3>
+        <p></p>
+
+        <label for="">HTML5</label>
+        <progress id="file" max="100" value="80"> 80% </progress>
+
+        <label for="">CSS3</label>
+        <progress id="file" max="100" value="70"> 70% </progress>
+
+        <label for="">JavaScript</label>
+        <progress id="file" max="100" value="50"> 50% </progress>
+
+
+        <label for="">React</label>
+        <progress id="file" max="100" value="10"> 10% </progress>
+
+      </section>
+
+      <section class="hobbies container">
+        <h3>Hobbies</h3>
+
+        <card-hobbie 
+          img="./assets/gaming.jpeg"
+          title="Gaming"
+        >Lorem ipsum dolor sit amet.</card-hobbie>
+        <card-hobbie
+          img="./assets/cooking.jpeg"
+          title="Cooking"
+        >
+        Lorem ipsum dolor sit amet.
+        </card-hobbie>
+        <card-hobbie
+          img="./assets/biking.jpeg"
+          title="Biking"
+        >Lorem ipsum dolor sit amet.
+        </card-hobbie>
+      </section>  
+
+      <section class="blog container">
+        <h3>Blog</h3>
+        <card-blog
+          title="How to organize your CSS"
+          img="./assets/cssBlog.jpeg"
+        >
+          In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi. Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+        </card-blog>
+      </section>
+
+      <section>
+          
+      </section>
+    </main>
+    <script type="module" src="./components/cardBlog.js"></script>
+    <script type="module" src="./components/hobbies.js"></script>
   </body>
 </html>
