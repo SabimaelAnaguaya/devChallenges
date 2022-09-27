@@ -23,7 +23,7 @@ class CardSolution extends HTMLElement {
                 <p><slot></slot></p>
             </div>
             <span>
-                <a href="${this.url}">Go to Page</a>
+                <a href="${this.url}" target="_Blank">Go to Page</a>
             </span>
         </div>
         ${this.getStyles()}
@@ -34,11 +34,9 @@ class CardSolution extends HTMLElement {
         return `
         <style>
         :host{
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
+            --primary: #de703c;
+            --secondary: #2f3c4f;
             display:inline;
-            font-family: 'Montserrat', sans-serif;
-
         }
         *{
             padding: 0;
@@ -49,7 +47,7 @@ class CardSolution extends HTMLElement {
         .card-container{
             width: 300px;
             height: 400px;
-            background: linear-gradient(rgba(243, 134, 70, 0.806), blue);
+            background: linear-gradient(var(--secondary), var(--primary));
             border-radius: 10px;
             padding: 10px;
             color: azure;
@@ -67,7 +65,7 @@ class CardSolution extends HTMLElement {
         }
 
         .info-card h1{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
 
         .info-card h4{
@@ -93,7 +91,7 @@ class CardSolution extends HTMLElement {
         
         span a{
             
-            background: black;
+            background: var(--secondary);
             padding:5px 12px;
             color: azure;
             text-decoration: none;
