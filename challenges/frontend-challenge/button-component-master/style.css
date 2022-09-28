@@ -2,19 +2,33 @@
 html{
     font-family: 'Noto Sans JP', sans-serif;;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-:root{
 
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 50px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2b2928c5;
 }
 
 .btn-container{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding:20px;
     align-items: center;
     border:1px solid #828282;
     border-radius: 20px;
     width: fit-content;
+    background: azure;
+    box-shadow: 0 0 5px azure;
 }
 
 .btn-container > p{
@@ -88,4 +102,40 @@ html{
 
 .btn-5:hover, .btn-5:focus{
     background: none;
+}
+
+.btn-6{
+    background-color:#3D5AFE;
+    color:#E0E0E0;
+}
+
+.btn-6:hover, .btn-6:focus{
+    background: #3D5AFE;
+}
+
+.btn-7, .btn-7-1, .btn-7-2{
+    background-color:#3D5AFE;
+    color:#E0E0E0;
+}
+
+.btn-7-1{
+    width: 140px;
+    height: 50px;
+}
+
+.btn-7-2{
+    width: 160px;
+    height: 60px;
+}
+
+.btn-7:hover, .btn-7:focus {
+    background: #3D5AFE;
+}
+
+.btn-7-1:hover, .btn-7-1:focus {
+    background: #3D5AFE;
+}
+
+.btn-7-2:hover, .btn-7-2:focus {
+    background: #3D5AFE;
 }
