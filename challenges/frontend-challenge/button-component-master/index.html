@@ -12,32 +12,52 @@
     
   </head>
   <body>
-    
-    <btn-comp  
-      class="btn_1" 
-      title="button" 
-      subtitle=":hover & :focus"></btn-comp>
+
+      <div class="btn-container">
+        <p>< Button /></p>
+        <button class="btn">
+          <!-- <img src="./assets/cart.svg" alt=""> -->
+          <p>Default</p>
+        </button>
+        <p>&:hover, &:focus</p>
+      </div>
+
+      <div class="btn-container">
+        <p>< Button variant=”outline” /></p>
+        <button class="btn btn-2">
+          <!-- <img src="./assets/cart.svg" alt=""> -->
+          <p>Default</p>
+        </button>
+        <p>&:hover, &:focus</p>
+      </div>
+
+      <div class="btn-container">
+        <p>< Button variant=”text” /></p>
+        <button class="btn btn-3">
+          <!-- <img src="./assets/cart.svg" alt=""> -->
+          <p>Default</p>
+        </button>
+        <p>&:hover, &:focus</p>
+      </div>
       
-    <btn-comp  
-      class="btn_2" 
-      title="button variant='outline'" 
-      subtitle=":hover & :focus"></btn-comp>
+      <div class="btn-container">
+        <p>< Button disableShadow /></p>
+        <button class="btn btn-4">
+          <!-- <img src="./assets/cart.svg" alt=""> -->
+          <p>Default</p>
+        </button>
+        <p></p>
+      </div>
+      
+      <div class="btn-container">
+        <p>< Button disabled /></p>
+        <button class="btn btn-5">
+          <!-- <img src="./assets/cart.svg" alt=""> -->
+          <p>Default</p>
+        </button>
+        <p>< Button variant=”text” disabled /></p>
+      </div>
 
-    <btn-comp  
-      class="btn_3" 
-      title="Button variant=”text”" 
-      subtitle=":hover & :focus"></btn-comp>
-
-    <btn-comp  
-      class="btn_4" 
-      title="Button disableShadow" 
-      subtitle="Button disableShadow"></btn-comp>
-
-      <btn-comp  
-      class="btn_5" 
-      title="Button disabled" 
-      subtitle="Button variant=”text” disabled"></btn-comp>
-    
     <script type="module" src="./components/button.js"></script>
   </body>
 </html>

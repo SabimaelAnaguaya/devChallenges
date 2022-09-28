@@ -3,27 +3,89 @@ html{
     font-family: 'Noto Sans JP', sans-serif;;
 }
 
+:root{
 
-.btn_2{
-    --primary:none;
-    --secondary:rgba(41, 98, 255, 0.1);
-    --border:#3D5AFE 2px solid;
 }
 
-.btn_3{
-    --primary:none;
-    --secondary:rgba(41, 98, 255, 0.1);
-    --font-color: #3D5AFE;
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+    border:1px solid #828282;
+    border-radius: 20px;
+    width: fit-content;
 }
 
-.btn_4{
-    --primary:#3D5AFE;
-    --secondary: #3D5AFE;
-    --font-color:white;
-    --shadow:none;
+.btn-container > p{
+    font-size: 12px;
+    color: #828282;
+    opacity: 0;
+    transition: .5s all ease-out;
 }
 
-.btn_5{
-    --font-color:gray;
-    --secondary:none;
+.btn-container:hover > p{
+    opacity: 1;
+    transition: .5s all ease-in;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    background: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.btn:hover, .btn:focus{
+    background-color: #AEAEAE;
+}
+
+/* Buttons*/
+
+.btn-2{
+    background: none;
+    color: #3D5AFE;
+    border: 2px solid #3D5AFE;
+}
+
+.btn-2:hover, .btn-2:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.btn-3{
+    background: none;
+    color: #3D5AFE;
+}
+
+.btn-3:hover, .btn-3:focus{
+    background: rgba(41, 98, 255, 0.1);
+}
+
+.btn-4{
+    background-color: #3D5AFE;
+    color: #E0E0E0;
+}
+
+.btn-4:hover, .btn-4:focus{
+    background: #3D5AFE;
+}
+
+.btn-5{
+    background-color:#E0E0E0;
+    color:#AEAEAE;
+}
+
+.btn-5:hover, .btn-5:focus{
+    background: none;
 }

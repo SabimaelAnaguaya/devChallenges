@@ -8,13 +8,21 @@ class BtnComp extends HTMLElement {
 
        this.title = this.getAttribute('title');
        this.subtitle = this.getAttribute('subtitle');
+       this.icoLeft = this.getAttribute('icoleft');
+       this.icoRight = this.getAttribute('icoright');
     }
     getTemplate(){
         const template = document.createElement('template');
         template.innerHTML=`
         <div class="btn-container">
             <p>< ${this.title} /></p>
-            <button class="btn_1">Default</button>
+
+            <div class="btn">
+                <img src="${this.icoLeft}" />
+                <p>Default</p>
+                <img src="${this.icoRight}"/>
+            </div>
+
             <p>${this.subtitle}</p>
         </div>
         ${this.getStyles()}
@@ -32,9 +40,9 @@ class BtnComp extends HTMLElement {
             --shadow: 0px 2px 3px rgba(51, 51, 51, 0.2); 
 
         }
-        button{
-            width: 81px;
-            height: 36px;
+        .btn{
+            width: 120px;
+            height: 40px;
             border-radius: 6px;
             border: var(--border);
             color:var(--font-color);
@@ -44,8 +52,18 @@ class BtnComp extends HTMLElement {
             background-color: var(--primary);
             box-shadow: var(--shadow);
             transition: .5s all ease-out
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
-        
+            
+        .btn img{
+            width: 20px;
+            height: 20px;
+            margin: 0;
+        }
+
         .btn-container{
             display: flex;
             flex-direction: column;
@@ -56,19 +74,19 @@ class BtnComp extends HTMLElement {
             width: fit-content;
         }
         
-        .btn-container p{
+        .btn-container > p{
             font-size: 12px;
             color: #828282;
             opacity: 0;
             transition: .5s all ease-out;
         }
 
-        .btn-container:hover p{
+        .btn-container:hover > p{
             opacity: 1;
             transition: .5s all ease-in;
         }
 
-        button:hover, button:focus{
+        .btn:hover, .btn:focus{
             background-color: var(--secondary);
         }
         
